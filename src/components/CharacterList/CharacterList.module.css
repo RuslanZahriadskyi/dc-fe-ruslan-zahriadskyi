@@ -1,0 +1,38 @@
+.characters__section {
+  overflow-x: auto;
+}
+
+.characters__table {
+  border-collapse: collapse;
+}
+
+.table__head {
+  background-color: rgba(229, 234, 244, 0.25);
+}
+
+.characters__table {
+  width: 100%;
+  /* margin-left: 140px; */
+  table-layout: fixed;
+}
+
+.table__head__row {
+  max-width: 1365px;
+}
+
+.table_column {
+  padding: 0;
+  padding: 16px 0;
+
+  text-align: start;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.table_column:first-child {
+  padding-left: 140px;
+}
+
+.table_column:last-child {
+  margin-right: 415px;
+}

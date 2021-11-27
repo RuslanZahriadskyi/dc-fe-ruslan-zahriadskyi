@@ -1,0 +1,35 @@
+.buttons__container {
+  margin: 40px 0 61px 136px;
+}
+
+.buttons {
+  width: 40px;
+  height: 40px;
+
+  margin: 0 4px;
+
+  color: #a9b1bd;
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.buttons:hover,
+.buttons:target {
+  color: #fff;
+  background-color: #11b0c8;
+  border-color: #11b0c8;
+}
+.buttons:target {
+  background-color: #11b0c8;
+}
+
+.buttons__seleced {
+  color: #fff;
+}
+
+.buttons.css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected:hover {
+  background-color: green;
+}

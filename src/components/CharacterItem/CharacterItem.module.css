@@ -1,0 +1,48 @@
+.character__image {
+  width: 43px;
+  height: 68px;
+  object-fit: cover;
+}
+
+.character__gender {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.character__button {
+  color: #11b0c8;
+  width: 43;
+  height: 43px;
+  border: '2px solid #11B0C8';
+  border-radius: 8px;
+}
+
+.character__button__checked {
+  color: #fff;
+  width: 43;
+  height: 43px;
+  background-color: #11b0c8;
+  border: '2px solid #11B0C8';
+  border-radius: 8px;
+}
+
+.character__button__checked:hover {
+  color: #11b0c8;
+  background-color: #fff;
+}
+
+.character__button:hover {
+  color: #fff;
+  background-color: #11b0c8;
+}
+
+tbody td {
+  padding: 0;
+  /* padding-top: 8px; */
+  border-bottom: 1px solid #e5eaf4;
+}
+
+td:first-child {
+  padding-left: 140px;
+}

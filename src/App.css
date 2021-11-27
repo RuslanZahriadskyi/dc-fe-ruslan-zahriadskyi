@@ -1,0 +1,41 @@
+/* poppins-regular - latin-ext_latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url('./fonts/poppins-v15-latin-ext_latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./fonts/poppins-v15-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin-ext_latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url('./fonts/poppins-v15-latin-ext_latin-500.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('./fonts/poppins-v15-latin-ext_latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+body {
+  font-family: 'Poppins';
+  color: #a9b1bd;
+}
+
+.app-container {
+  max-width: 1920px;
+  height: auto;
+}
+
+/* color: #A9B1BD;
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Poppins';
+    border: 1px solid #A9B1BD;
+    margin-left: 4px;
+    margin-right: 4px; */

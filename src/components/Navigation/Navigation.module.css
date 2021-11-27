@@ -1,0 +1,20 @@
+.navigation__container {
+  display: flex;
+  margin-left: 140px;
+  margin-bottom: 24px;
+}
+
+.navigation__link__characters,
+.navigation__link__favorites {
+  font-weight: 500;
+  color: #a9b1bd;
+  text-decoration: none;
+}
+
+.navigation__link__favorites {
+  margin-left: 80px;
+}
+
+nav a.active {
+  color: #11b0c8;
+}

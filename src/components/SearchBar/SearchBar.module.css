@@ -1,0 +1,28 @@
+.searchBar__container {
+  display: flex;
+}
+
+.searchBar__placeholder {
+  width: 123px;
+
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  color: #a9b1bd;
+}
+
+.searchBar__items {
+  width: 128px;
+  height: 56px;
+
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+  color: #a9b1bd;
+
+  border-radius: 0;
+}
+
+.searchBar__input {
+  border-radius: 0;
+}

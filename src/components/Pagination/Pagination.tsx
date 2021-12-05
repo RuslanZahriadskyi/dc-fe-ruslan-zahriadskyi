@@ -13,6 +13,7 @@ export default function BasicPagination({ page, getPersons }: IProps) {
         <Pagination
           className={s.buttons__container}
           count={page}
+          defaultPage={1}
           variant="outlined"
           shape="rounded"
           onChange={(e, page) => {

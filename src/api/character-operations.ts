@@ -3,7 +3,18 @@ const baseUrlCharacter = 'https://rickandmortyapi.com/api/character';
 async function getCharacters(page?: number) {
   try {
     const response = await fetch(`${baseUrlCharacter}/?page=${page}`);
-    const data = await response.json();
+    const data = (await response).json();
+
+    return data;
+  } catch (error) {
+    console.log(error);
+  }
+}
+
+async function getCharactersByEpisode(url: string) {
+  try {
+    const response = await fetch(url);
+    const data = (await response).json();
 
     return data;
   } catch (error) {
@@ -48,4 +59,5 @@ export {
   getCharacterById,
   getCharactersByIds,
   getCharacterByName,
+  getCharactersByEpisode,
 };

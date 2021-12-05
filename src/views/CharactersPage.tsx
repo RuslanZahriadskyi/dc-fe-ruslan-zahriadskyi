@@ -1,16 +1,23 @@
 import { useState, useEffect } from 'react';
 import CharacterList from '../components/CharacterList';
-import { Character } from '../interfaces/character-interface';
+import {
+  Character,
+  CharactersPageProps,
+} from '../interfaces/character-interface';
 import { getCharacters } from '../api/character-operations';
 import { getLastEpisode } from '../api/episode-operations';
 
-export default function CharactersPage() {
+export default function CharactersPage({
+  charactersSearch,
+  pagesSearch,
+  getCharactersSearchByPage,
+}: CharactersPageProps) {
   const [characters, setCharacters] = useState<Character[]>([]);
   const [pages, setPages] = useState<number>(0);
 
   useEffect(() => {
-    getPersons(1);
-  }, []);
+    !charactersSearch?.length && getPersons(1);
+  }, [charactersSearch]);
 
   async function getPersons(page: number) {
     try {
@@ -45,11 +52,19 @@ export default function CharactersPage() {
 
   return (
     <>
-      <CharacterList
-        characters={characters}
-        pages={pages}
-        getPersons={getPersons}
-      />
+      {charactersSearch?.length ? (
+        <CharacterList
+          characters={charactersSearch}
+          pages={pagesSearch}
+          getPersons={getCharactersSearchByPage}
+        />
+      ) : (
+        <CharacterList
+          characters={characters}
+          pages={pages}
+          getPersons={getPersons}
+        />
+      )}
     </>
   );
 }
